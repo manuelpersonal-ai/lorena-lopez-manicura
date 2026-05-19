@@ -22,7 +22,14 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'Lorena López Manicura | Berazategui',
   description:
-    'Estudio de manicura profesional en el barrio Juan María Gutiérrez, Berazategui. Semipermanente, soft gel, kapping, nail art y más. Reservá tu turno.',
+    'Estudio de manicura profesional en el barrio Juan María Gutiérrez, Berazategui.',
+  icons: {
+    icon: [
+      { url: '/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [{ url: '/icon-192x192.png', sizes: '192x192', type: 'image/png' }],
+  },
 };
 
 export default function RootLayout({
