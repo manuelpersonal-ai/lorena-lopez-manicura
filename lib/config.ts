@@ -6,11 +6,11 @@ export const SITE_CONFIG = {
   schedule: 'Lunes a sábado, 9:00 – 18:00 hs',
 
   // Reemplazar antes de publicar
-  whatsapp: '5491100000000',
-  instagram: '@lorena.manicura',
-  instagramUrl: 'https://instagram.com/lorena.manicura',
+  whatsapp: '5491154812048',
+  instagram: 'lorelopez_manicura',
+  instagramUrl: 'https://www.instagram.com/lorelopez_manicura?igsh=MW00b3J4bDV4ZzVzeQ==',
   facebook: 'Lorena López Manicura',
-  facebookUrl: 'https://facebook.com/lorenamanicura',
+  facebookUrl: 'https://www.facebook.com/share/14XZZ9iHF6T/',
 } as const;
 
 export function getWhatsAppUrl(message?: string): string {
