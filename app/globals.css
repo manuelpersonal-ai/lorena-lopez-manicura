@@ -1,0 +1,169 @@
+@import "tailwindcss";
+@import "../docs/design/tokens.css";
+
+@theme inline {
+  /* Bind design token fonts to next/font CSS variables */
+  --font-display: var(--font-cormorant-garamond, 'Cormorant Garamond', Georgia, serif);
+  --font-body: var(--font-dm-sans, 'DM Sans', 'Helvetica Neue', Arial, sans-serif);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-blush-light);
+  color: var(--color-espresso);
+}
+
+/* Focus visible ring */
+:focus-visible {
+  outline: 2px solid var(--color-rose-blush);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Navbar responsive */
+.nav-links { display: flex; }
+.nav-burger { display: none; }
+@media (max-width: 767px) {
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+}
+
+/* BookingForm — fecha/horario se apilan en mobile */
+@media (max-width: 480px) {
+  .booking-date-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* HeroSection — CTAs side-by-side */
+.hero-ctas a {
+  white-space: nowrap;
+}
+@media (max-width: 380px) {
+  .hero-ctas a {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── HeroSection animations ────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── PhotoGrid ──────────────────────────────────────────── */
+.photo-btn {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bone);
+  display: block;
+  width: 100%;
+}
+.photo-btn img {
+  transition: transform 350ms ease;
+}
+.photo-btn:hover img {
+  transform: scale(1.06);
+}
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(38,21,16,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: background 250ms, opacity 250ms;
+}
+.photo-btn:hover .photo-overlay {
+  background: rgba(38,21,16,0.35);
+  opacity: 1;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+@media (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── BookingForm ────────────────────────────────────────── */
+.booking-input {
+  width: 100%;
+  background-color: white;
+  border: 1.5px solid var(--color-bone);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--color-espresso);
+  outline: none;
+  transition: border-color 200ms, box-shadow 200ms;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+.booking-input:focus,
+.booking-input:focus-visible {
+  outline: none;
+  border-color: var(--color-rose-blush);
+  box-shadow: 0 0 0 3px rgba(240, 98, 146, 0.2);
+}
+
+.booking-submit {
+  background-color: var(--color-espresso);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.9rem 2rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms, transform 100ms;
+  font-family: var(--font-body);
+}
+
+.booking-submit:hover {
+  background-color: var(--color-mocha);
+}
+
+.booking-submit:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,22 @@
+categoria,sub categoria,nombre,descripcion,precio,badge
+Semipermanente,Manos,Esmaltado semipermanente de larga duración,20000,Más pedido
+Semipermanente,Pies,Esmaltado semipermanente de larga duración,22000,Más pedido
+Soft Gel,Manos,Extensiones Softgel - Todos los largos,Extensiones en softgel disponibles en todos los largos,26000, 
+Soft Gel,Pies,Extensiones Softgel,Extensiones en softgel,26000, 
+Kapping,Manos,Kapping Gel - Uñas Cortas,Técnica kapping en gel para uñas cortas,22000,
+Kapping,Manos,Kapping Gel - A partir de Largo N°1,Técnica kapping en gel a partir del largo número 1,24000,
+Kapping,Pies,Kapping Gel,Técnica kapping en gel,26000,
+Kapping,Manos,Kapping Polygel - Uñas Cortas,Técnica kapping en polygel para uñas cortas,24000,
+Kapping,Manos,Kapping Polygel - A partir de Largo N°1,Técnica kapping en polygel a partir del largo número 1,26000,
+Kapping,Pies,Kapping Polygel,Técnica kapping en polygel,26000,
+Belleza de Pies,,Semipermanente Pies,Sólo esmaltado semipermanente,22000,
+Belleza de Pies,,Belleza de Pies,Remoción de durezas exfoliacion e hidratación,25000,
+Belleza de Pies,,Softgel en Pies,Técnica softgel aplicada en pies,26000,
+Belleza de Pies,,Belleza de Pies + Semipermanente,Remoción de durezas exfoliacion e hidratación + semipermanente,28000,
+Nail Art,Simple,Nails Art Simple,Diseño simple de nail art (Sin cargo),0,
+Nail Art,Complejo,Nails Art Complejo,Diseño complejo de nail art a medida (pedir cotización),0,
+Retiro,Retiro de Otro Salón,Esculpidas y Softgel,Retiro de uñas esculpidas y softgel realizadas en otro salón,7000,
+Retiro,Retiro de Otro Salón,Semi y Kapping,Retiro de semipermanente y kapping realizados en otro salón,5000,
+Retiro,Retiro de Mi Salón,Con renovación,Retiro con renovación de servicio,0,
+Retiro,Retiro de Mi Salón,Sin renovación semipermanente o kapping,Retiro sin renovación de servicio semipermanente o kapping,3000,
+Retiro,Retiro de Mi Salón,Sin renovación softgel,Retiro sin renovación de servicio softgel,5000,
